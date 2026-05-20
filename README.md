@@ -53,7 +53,12 @@ pip install -r requirements.txt
 ```
 
 ### 3. Model Weights
-Place your trained PyTorch weights (`siamese_unet_weights.pth`) in the root directory. *(If omitted, the server runs in a demo mode with untrained weights).*
+Because the PyTorch weight files exceed GitHub's 100MB file limit, they are hosted separately. 
+1. Go to the **[Releases](https://github.com/Mahith-Reddy-Gangu/geospatial-change-detection/releases)** page of this repository.
+2. Download `siamese_unet_weights.pth`.
+3. Place the downloaded `.pth` file in the root directory of this project.
+
+*(Note: If the weights are omitted, the server will automatically run in a fallback demo mode using untrained weights).*
 
 ### 4. Start the Application
 **On Windows:**
