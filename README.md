@@ -21,6 +21,7 @@ By comparing historical baselines (e.g., Esri) with recent captures, the system 
 
 **Key Technical Achievements:**
 - Designed and trained a custom **Siamese U-Net** on the LEVIR-CD dataset, achieving an **~80% F1-Score** on high-resolution validation data.
+- **Illumination & Seasonal Invariance**: The model inherently learns to ignore superficial environmental differences (e.g., shadows, seasons, lighting angles), isolating only true structural development.
 - Engineered a robust backend using **FastAPI** to handle live inference and real-time Esri tile fetching natively.
 - Developed an interactive, state-free **React-style frontend dashboard** for seamless technical demonstrations.
 
