@@ -20,7 +20,7 @@ This project implements a Deep Learning pipeline designed to solve a geospatial 
 By comparing historical baselines (e.g., Esri) with recent captures, the system identifies new construction and draws semantic masks over building footprints in real-time. 
 
 **Key Technical Achievements:**
-- Designed and trained a custom **Siamese U-Net** on the LEVIR-CD dataset, achieving an **~80% F1-Score** on high-resolution validation data.
+- Designed and trained a custom **Siamese U-Net** on the LEVIR-CD dataset, achieving a **peak F1-Score of 83.66%** and steadily reducing validation loss by over 66% across 40 epochs.
 - **Illumination & Seasonal Invariance**: The model inherently learns to ignore superficial environmental differences (e.g., shadows, seasons, lighting angles), isolating only true structural development.
 - Engineered a robust backend using **FastAPI** to handle live inference and real-time Esri tile fetching natively.
 - Developed an interactive, state-free **React-style frontend dashboard** for seamless technical demonstrations.
